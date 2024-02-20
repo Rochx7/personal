@@ -8,6 +8,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Personal portifoil",
   description: "",
+  icons: {
+    icon: "/logo_tab.svg",
+  },
 };
 
 export default function RootLayout({
@@ -17,7 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(inter.className,'bg-zinc-900 text-zinc-100' )}>{children}</body>
+      <body className={cn(inter.className, "bg-zinc-900 text-zinc-100")}>
+        {children}
+      </body>
     </html>
   );
 }

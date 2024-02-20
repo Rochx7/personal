@@ -1,7 +1,9 @@
-const Logo = ()=> {
+const Logo = () => {
   return (
-    <strong className="text-xl">Guilherme Rocha.</strong>
-  )
-}
+    <strong className="text-xl">
+      Guilherme Rocha<span className="text-lime-400">.</span>
+    </strong>
+  );
+};
 
-export default Logo
+export default Logo;
