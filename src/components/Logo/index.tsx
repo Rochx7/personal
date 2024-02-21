@@ -1,7 +1,9 @@
+import { league_spartan } from "@/utils/fonts";
+
 const Logo = () => {
   return (
-    <strong className="text-xl">
-      Guilherme Rocha<span className="text-lime-400">.</span>
+    <strong className={`text-3xl ${league_spartan.className}`}>
+      G<span className="text-green-500">.</span>
     </strong>
   );
 };
