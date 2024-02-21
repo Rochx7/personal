@@ -1,15 +1,20 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, League_Spartan, Montserrat } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-
-const inter = Inter({ subsets: ["latin"] });
+import { montserrat } from "@/utils/fonts";
 
 export const metadata: Metadata = {
   title: "Personal portifoil",
   description: "",
   icons: {
-    icon: "/logo_tab.svg",
+    icon: "/public/favicon/favicon-16x16.png",
+    shortcut: "/public/favicon/favicon-16x16.png",
+    apple: "/public/favicon/apple-touch-icon.png",
+    other: {
+      rel: "apple-touch-icon-precomposed",
+      url: "/public/favicon/apple-touch-icon.png",
+    },
   },
 };
 
@@ -20,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(inter.className, "bg-zinc-900 text-zinc-100")}>
+      <body className={cn(montserrat.className, "bg-zinc-950 text-zinc-100")}>
         {children}
       </body>
     </html>
