@@ -1,8 +1,9 @@
-import { MapPinIcon } from "@heroicons/react/24/solid";
+import { RocketIcon } from "@radix-ui/react-icons";
+
 const Call = () => {
   return (
-    <div className="max-h-64 min-h-24 min-w-64  flex flex-col gap-7 justify-around items-center p-6 bg-zinc-900  rounded-xl shadow dark:bg-zinc-700 dark:border-zinc-700">
-      <MapPinIcon className="min-h-12 w-14 text-zinc-600" />
+    <div className="max-h-72 min-h-24 min-w-64 w-full flex flex-col gap-7 justify-around items-center p-6 bg-zinc-900  rounded-xl shadow dark:bg-zinc-700 dark:border-zinc-700">
+      <RocketIcon className="w-14 h-14 text-zinc-600" />
       <h1 className="text-3xl text-center font-bold tracking-tight text-zinc-100 dark:text-white">
         {"Let's work together ?"}
       </h1>
