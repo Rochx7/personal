@@ -6,7 +6,7 @@ const icons = ["linkedin", "github", "discord", "instagram"];
 
 const Cards = () => {
   return (
-    <div className="w-full flex flex-col sm:flex-row justify-between gap-4">
+    <div className="w-full h-full flex flex-col sm:flex-row justify-between gap-4 flex-wrap md:flex-nowrap">
       <div className="w-full flex flex-col gap-4">
         <StretchedCard title="Title" body="Software developer" />
         <div className="flex justify-between gap-4">
