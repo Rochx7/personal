@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Inter, League_Spartan, Montserrat } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { montserrat } from "@/utils/fonts";
@@ -25,7 +24,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(montserrat.className, "bg-zinc-950 text-zinc-100")}>
+      <body
+        className={cn(
+          montserrat.className,
+          "magicpattern min-h-screen bg-gradient-to-bl bg-repeat from-zinc-950 via-zinc-900 to-zinc-950 text-zinc-100 mx-auto px-16"
+        )}
+      >
         {children}
       </body>
     </html>
