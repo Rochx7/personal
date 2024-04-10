@@ -1,15 +1,26 @@
-import IconJavascript from "../../../public/svgs/IconJavascript";
-import IconNextjs from "../../../public/svgs/IconNextjs";
-import IconNode from "../../../public/svgs/IconNode";
-import IconPgsql from "../../../public/svgs/IconPgsql";
-import IconReact from "../../../public/svgs/IconReact";
-import IconSequelize from "../../../public/svgs/IconSequelize";
+"use client";
 
+import {
+  IconExpo,
+  IconFigma,
+  IconFireBase,
+  IconGit,
+  IconGitLab,
+  IconJavascript,
+  IconNextjs,
+  IconNode,
+  IconPgsql,
+  IconPrisma,
+  IconReact,
+  IconRedux,
+  IconSass,
+  IconSequelize,
+  IconStoryBook,
+} from "../../../public/svgs";
 import IconTailwind from "../../../public/svgs/IconTailwind";
 import IconTypescript from "../../../public/svgs/IconTypescript";
 import IconVue from "../../../public/svgs/IconVue";
-import IconCard from "../Intro/Cards/IconCard";
-import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
+import { CarouselIcons } from "./CarouselIcons";
 
 const svgStyles = {
   height: "42px",
@@ -23,25 +34,25 @@ const listSvgs = {
   next: () => <IconNextjs {...svgStyles} />,
   vue: () => <IconVue {...svgStyles} />,
   node: () => <IconNode {...svgStyles} />,
+  expo: () => <IconExpo {...svgStyles} />,
+  redux: () => <IconRedux {...svgStyles} />,
   tailwind: () => <IconTailwind {...svgStyles} />,
-  postgress: () => <IconPgsql {...svgStyles} />,
+  sass: () => <IconSass {...svgStyles} />,
+  storyBook: () => <IconStoryBook {...svgStyles} />,
+  git: () => <IconGit {...svgStyles} />,
+  gitLab: () => <IconGitLab {...svgStyles} />,
+  figma: () => <IconFigma {...svgStyles} />,
+  fireBase: () => <IconFireBase {...svgStyles} />,
+  prisma: () => <IconPrisma {...svgStyles} />,
   sequelize: () => <IconSequelize {...svgStyles} />,
+  postgress: () => <IconPgsql {...svgStyles} />,
 };
 
 const SkillsSection = () => {
   return (
     <div className="flex justify-center items-start gap-9">
-      <div className="md:w-4/6 flex flex-col items-center justify-center border-solid border-2 border-zinc-800 shadow rounded-xl">
-        <div className="flex justify-between gap-4 p-8">
-          {Object.values(listSvgs).map((icon, index) => (
-            <div
-              key={`icon-${index}`}
-              className="p-3 bg-zinc-900 rounded-xl shadow dark:bg-zinc-700 dark:border-zinc-700 text-zinc-600"
-            >
-              {icon()}
-            </div>
-          ))}
-        </div>
+      <div className="md:w-4/6 flex flex-col items-center justify-center border-solid border-2 border-zinc-800 shadow rounded-xl overflow-hidden">
+        <CarouselIcons content={Object.values(listSvgs)} />
         <h1 className="w-full text-center p-1 text-lg font-light italic tracking-tight text-zinc-100 dark:text-white rounded-b-lg shadow bg-zinc-800 dark:bg-zinc-800 dark:border-zinc-800">
           {"Languages, frameworks and tools"}
         </h1>
