@@ -3,6 +3,7 @@ import Divider from "@/components/Divider";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Intro from "@/components/Intro";
+import Projects from "@/components/Projects";
 import SkillsSection from "@/components/SkillsSection";
 
 export default function Home() {
@@ -14,6 +15,8 @@ export default function Home() {
       <About />
       <Divider section="skills" />
       <SkillsSection />
+      <Divider section="skills" />
+      <Projects />
       <Footer />
     </main>
   );
